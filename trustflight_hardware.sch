@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:trustflight_hardware-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -96,7 +95,7 @@ L Oscillator:ASE-xxxMHz X?
 U 1 1 5B0F2A8F
 P 8600 5700
 F 0 "X?" H 8750 5950 50  0000 L CNN
-F 1 "SIT8008BI-71-33S-16.000000G" H 8941 5655 50  0001 L CNN
+F 1 "SIT8008BI-71-33S-16.000000G" H 7950 5250 50  0000 L CNN
 F 2 "crystals:Crystal_4Pin_2.0x1.6mm" H 9300 5350 50  0001 C CNN
 F 3 "https://www.sitime.com/datasheet/SiT8008" H 8500 5700 50  0001 C CNN
 	1    8600 5700
@@ -130,7 +129,7 @@ U 1 1 5B0F2F05
 P 5800 7300
 F 0 "C?" H 5892 7346 50  0000 L CNN
 F 1 "4.7u" H 5892 7255 50  0000 L CNN
-F 2 "passive:C_0603_1608Metric_Rounded" H 5800 7300 50  0001 C CNN
+F 2 "passive:C_0402_1005Metric_Rounded" H 5800 7300 50  0001 C CNN
 F 3 "~" H 5800 7300 50  0001 C CNN
 	1    5800 7300
 	1    0    0    -1  
@@ -266,7 +265,7 @@ U 1 1 5B0F3A75
 P 7800 4100
 F 0 "C?" H 7892 4146 50  0000 L CNN
 F 1 "4.7u" H 7892 4055 50  0000 L CNN
-F 2 "passive:C_0603_1608Metric_Rounded" H 7800 4100 50  0001 C CNN
+F 2 "passive:C_0402_1005Metric_Rounded" H 7800 4100 50  0001 C CNN
 F 3 "~" H 7800 4100 50  0001 C CNN
 	1    7800 4100
 	1    0    0    -1  
@@ -405,8 +404,8 @@ L Device:C_Small C?
 U 1 1 5B0F4A27
 P 4800 4150
 F 0 "C?" H 4892 4196 50  0000 L CNN
-F 1 "4.7u" H 4892 4105 50  0000 L CNN
-F 2 "passive:C_0603_1608Metric_Rounded" H 4800 4150 50  0001 C CNN
+F 1 "22u" H 4892 4105 50  0000 L CNN
+F 2 "passive:C_0805" H 4800 4150 50  0001 C CNN
 F 3 "~" H 4800 4150 50  0001 C CNN
 	1    4800 4150
 	1    0    0    -1  
@@ -417,7 +416,7 @@ U 1 1 5B0F4AB1
 P 6250 4150
 F 0 "C?" H 6342 4196 50  0000 L CNN
 F 1 "4.7u" H 6342 4105 50  0000 L CNN
-F 2 "passive:C_0603_1608Metric_Rounded" H 6250 4150 50  0001 C CNN
+F 2 "passive:C_0402_1005Metric_Rounded" H 6250 4150 50  0001 C CNN
 F 3 "~" H 6250 4150 50  0001 C CNN
 	1    6250 4150
 	1    0    0    -1  
@@ -511,7 +510,7 @@ U 1 1 5B0F5AE7
 P 6250 3700
 F 0 "C?" H 6342 3746 50  0000 L CNN
 F 1 "4.7u" H 6342 3655 50  0000 L CNN
-F 2 "passive:C_0603_1608Metric_Rounded" H 6250 3700 50  0001 C CNN
+F 2 "passive:C_0402_1005Metric_Rounded" H 6250 3700 50  0001 C CNN
 F 3 "~" H 6250 3700 50  0001 C CNN
 	1    6250 3700
 	1    0    0    -1  
@@ -1626,4 +1625,8 @@ Wire Notes Line
 	3900 4800 3900 2900
 Wire Notes Line
 	5100 4800 5100 7750
+Text Notes 550  6800 0    50   ~ 0
+Assumes open-drain pin
+Text Notes 9200 900  0    50   ~ 0
+Assumes open-drain pin
 $EndSCHEMATC
