@@ -479,7 +479,7 @@ Connection ~ 6000 3850
 Wire Wire Line
 	6000 3850 6350 3850
 Wire Wire Line
-	6350 3400 6700 3400
+	6350 3400 6650 3400
 Connection ~ 6350 3400
 $Comp
 L power:VAA #PWR0114
@@ -915,17 +915,6 @@ F 3 "" H 1950 7550 50  0001 C CNN
 $EndComp
 Connection ~ 1950 7550
 $Comp
-L power:+5V #PWR0123
-U 1 1 5B116353
-P 1950 6800
-F 0 "#PWR0123" H 1950 6650 50  0001 C CNN
-F 1 "+5V" H 1965 6973 50  0000 C CNN
-F 2 "" H 1950 6800 50  0001 C CNN
-F 3 "" H 1950 6800 50  0001 C CNN
-	1    1950 6800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R7
 U 1 1 5B1163BA
 P 1750 6800
@@ -938,7 +927,6 @@ F 3 "~" H 1750 6800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1950 6800 1850 6800
-Connection ~ 1950 6800
 Wire Wire Line
 	1650 6800 1600 6800
 Wire Wire Line
@@ -1009,17 +997,6 @@ F 1 "+5V" H 6915 2223 50  0000 C CNN
 F 2 "" H 6900 2050 50  0001 C CNN
 F 3 "" H 6900 2050 50  0001 C CNN
 	1    6900 2050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0126
-U 1 1 5B12BA72
-P 6400 1600
-F 0 "#PWR0126" H 6400 1450 50  0001 C CNN
-F 1 "+5V" H 6415 1773 50  0000 C CNN
-F 2 "" H 6400 1600 50  0001 C CNN
-F 3 "" H 6400 1600 50  0001 C CNN
-	1    6400 1600
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1257,10 +1234,6 @@ F 3 "~" H 8200 2250 50  0001 C CNN
 	1    8200 2250
 	0    1    1    0   
 $EndComp
-Text Label 5100 3850 0    50   ~ 0
-VIN
-Text Label 8100 2250 2    50   ~ 0
-VIN
 $Comp
 L Transistor_BJT:BC807W Q2
 U 1 1 5B169675
@@ -1271,17 +1244,6 @@ F 2 "sot:SOT-323_SC-70" H 7000 875 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC807.pdf" H 6800 950 50  0001 L CNN
 	1    6800 950 
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR0135
-U 1 1 5B16967C
-P 6700 750
-F 0 "#PWR0135" H 6700 600 50  0001 C CNN
-F 1 "+5V" H 6715 923 50  0000 C CNN
-F 2 "" H 6700 750 50  0001 C CNN
-F 3 "" H 6700 750 50  0001 C CNN
-	1    6700 750 
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R20
@@ -1296,7 +1258,6 @@ F 3 "~" H 6900 750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6700 750  6800 750 
-Connection ~ 6700 750 
 Wire Wire Line
 	7000 750  7050 750 
 Wire Wire Line
@@ -1735,4 +1696,34 @@ Wire Wire Line
 	3250 1900 3650 1900
 Text Label 3650 1900 2    50   ~ 0
 ESC_TLM
+Wire Wire Line
+	6700 750  6700 650 
+Connection ~ 6700 750 
+Wire Wire Line
+	1950 6700 1950 6800
+Connection ~ 1950 6800
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5B1ADA97
+P 6650 3400
+F 0 "#FLG0103" H 6650 3475 50  0001 C CNN
+F 1 "PWR_FLAG" V 6650 3528 50  0000 L CNN
+F 2 "" H 6650 3400 50  0001 C CNN
+F 3 "" H 6650 3400 50  0001 C CNN
+	1    6650 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3400
+Wire Wire Line
+	6650 3400 6700 3400
+Text Label 4900 3850 0    50   ~ 0
+VSYS
+Text Label 1950 6700 1    50   ~ 0
+VSYS
+Text Label 6700 650  1    50   ~ 0
+VSYS
+Text Label 6400 1600 0    50   ~ 0
+VSYS
+Text Label 8100 2250 2    50   ~ 0
+VSYS
 $EndSCHEMATC
