@@ -28,12 +28,12 @@ $EndComp
 $Comp
 L stm32f302x:stm32f302x U4
 U 2 1 5B0F1C89
-P 3150 1400
-F 0 "U4" H 3150 1450 60  0000 L CNN
-F 1 "stm32f302x" H 3150 750 60  0000 L CNN
-F 2 "qfp:LQFP-48_7x7mm_Pitch0.5mm" H 1000 900 50  0001 C CNN
-F 3 "" H 1000 900 50  0001 C CNN
-	2    3150 1400
+P 3850 1400
+F 0 "U4" H 3850 1450 60  0000 L CNN
+F 1 "stm32f302x" H 3850 750 60  0000 L CNN
+F 2 "qfp:LQFP-48_7x7mm_Pitch0.5mm" H 1700 900 50  0001 C CNN
+F 3 "" H 1700 900 50  0001 C CNN
+	2    3850 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -975,12 +975,12 @@ $EndComp
 $Comp
 L Device:LED D3
 U 1 1 5B11DF9A
-P 8600 2250
-F 0 "D3" V 8545 2328 50  0000 L CNN
-F 1 "LED" V 8636 2328 50  0000 L CNN
-F 2 "passive:D_0603_1608Metric_Rounded" H 8600 2250 50  0001 C CNN
-F 3 "~" H 8600 2250 50  0001 C CNN
-	1    8600 2250
+P 8450 2250
+F 0 "D3" V 8395 2328 50  0000 L CNN
+F 1 "LED" V 8486 2328 50  0000 L CNN
+F 2 "passive:D_0603_1608Metric_Rounded" H 8450 2250 50  0001 C CNN
+F 3 "~" H 8450 2250 50  0001 C CNN
+	1    8450 2250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1066,7 +1066,7 @@ F 3 "" H 6400 1800 50  0001 C CNN
 	1    6400 1800
 	-1   0    0    -1  
 $EndComp
-Text Label 6700 1700 0    50   ~ 0
+Text Label 6950 1700 0    50   ~ 0
 F.port
 $Comp
 L power:GND #PWR0131
@@ -1104,104 +1104,104 @@ $EndComp
 $Comp
 L Device:R_Small R2
 U 1 1 5B13826A
-P 1650 1050
-F 0 "R2" H 1709 1096 50  0000 L CNN
-F 1 "100" H 1709 1005 50  0000 L CNN
-F 2 "passive:R_0402_1005Metric_Rounded" H 1650 1050 50  0001 C CNN
-F 3 "~" H 1650 1050 50  0001 C CNN
-	1    1650 1050
+P 1850 1050
+F 0 "R2" H 1909 1096 50  0000 L CNN
+F 1 "100" H 1909 1005 50  0000 L CNN
+F 2 "passive:R_0402_1005Metric_Rounded" H 1850 1050 50  0001 C CNN
+F 3 "~" H 1850 1050 50  0001 C CNN
+	1    1850 1050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R3
 U 1 1 5B138854
-P 1650 1450
-F 0 "R3" H 1709 1496 50  0000 L CNN
-F 1 "100" H 1709 1405 50  0000 L CNN
-F 2 "passive:R_0402_1005Metric_Rounded" H 1650 1450 50  0001 C CNN
-F 3 "~" H 1650 1450 50  0001 C CNN
-	1    1650 1450
+P 1850 1450
+F 0 "R3" H 1909 1496 50  0000 L CNN
+F 1 "100" H 1909 1405 50  0000 L CNN
+F 2 "passive:R_0402_1005Metric_Rounded" H 1850 1450 50  0001 C CNN
+F 3 "~" H 1850 1450 50  0001 C CNN
+	1    1850 1450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R4
 U 1 1 5B1388EA
-P 1650 1850
-F 0 "R4" H 1709 1896 50  0000 L CNN
-F 1 "100" H 1709 1805 50  0000 L CNN
-F 2 "passive:R_0402_1005Metric_Rounded" H 1650 1850 50  0001 C CNN
-F 3 "~" H 1650 1850 50  0001 C CNN
-	1    1650 1850
+P 1850 1850
+F 0 "R4" H 1909 1896 50  0000 L CNN
+F 1 "100" H 1909 1805 50  0000 L CNN
+F 2 "passive:R_0402_1005Metric_Rounded" H 1850 1850 50  0001 C CNN
+F 3 "~" H 1850 1850 50  0001 C CNN
+	1    1850 1850
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5B138984
-P 1650 2250
-F 0 "R5" H 1709 2296 50  0000 L CNN
-F 1 "100" H 1709 2205 50  0000 L CNN
-F 2 "passive:R_0402_1005Metric_Rounded" H 1650 2250 50  0001 C CNN
-F 3 "~" H 1650 2250 50  0001 C CNN
-	1    1650 2250
+P 1850 2250
+F 0 "R5" H 1909 2296 50  0000 L CNN
+F 1 "100" H 1909 2205 50  0000 L CNN
+F 2 "passive:R_0402_1005Metric_Rounded" H 1850 2250 50  0001 C CNN
+F 3 "~" H 1850 2250 50  0001 C CNN
+	1    1850 2250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R12
 U 1 1 5B138ACC
-P 2850 1900
-F 0 "R12" H 2909 1946 50  0000 L CNN
-F 1 "100" H 2909 1855 50  0000 L CNN
-F 2 "passive:R_0402_1005Metric_Rounded" H 2850 1900 50  0001 C CNN
-F 3 "~" H 2850 1900 50  0001 C CNN
-	1    2850 1900
+P 3150 1900
+F 0 "R12" H 3209 1946 50  0000 L CNN
+F 1 "100" H 3209 1855 50  0000 L CNN
+F 2 "passive:R_0402_1005Metric_Rounded" H 3150 1900 50  0001 C CNN
+F 3 "~" H 3150 1900 50  0001 C CNN
+	1    3150 1900
 	0    -1   1    0   
 $EndComp
-Text Label 2550 1900 2    50   ~ 0
-ESC_TLM
+Text Label 2850 1900 2    50   ~ 0
+ESC_TLM_P
 $Comp
 L Device:R_Small R11
 U 1 1 5B138DFE
-P 2600 2200
-F 0 "R11" H 2659 2246 50  0000 L CNN
-F 1 "1k" H 2659 2155 50  0000 L CNN
-F 2 "passive:R_0402_1005Metric_Rounded" H 2600 2200 50  0001 C CNN
-F 3 "~" H 2600 2200 50  0001 C CNN
-	1    2600 2200
+P 2900 2200
+F 0 "R11" H 2959 2246 50  0000 L CNN
+F 1 "1k" H 2959 2155 50  0000 L CNN
+F 2 "passive:R_0402_1005Metric_Rounded" H 2900 2200 50  0001 C CNN
+F 3 "~" H 2900 2200 50  0001 C CNN
+	1    2900 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0134
 U 1 1 5B1391E6
-P 2600 2300
-F 0 "#PWR0134" H 2600 2150 50  0001 C CNN
-F 1 "+3.3V" H 2615 2473 50  0000 C CNN
-F 2 "" H 2600 2300 50  0001 C CNN
-F 3 "" H 2600 2300 50  0001 C CNN
-	1    2600 2300
+P 2900 2300
+F 0 "#PWR0134" H 2900 2150 50  0001 C CNN
+F 1 "+3.3V" H 2915 2473 50  0000 C CNN
+F 2 "" H 2900 2300 50  0001 C CNN
+F 3 "" H 2900 2300 50  0001 C CNN
+	1    2900 2300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2750 1900 2600 1900
+	3050 1900 2900 1900
 Wire Wire Line
-	2600 1900 2600 2100
+	2900 1900 2900 2100
 Wire Wire Line
-	2600 1900 2550 1900
-Connection ~ 2600 1900
-Text Label 1750 1050 0    50   ~ 0
+	2900 1900 2850 1900
+Connection ~ 2900 1900
+Text Label 1950 1050 0    50   ~ 0
 M1
-Text Label 1750 1450 0    50   ~ 0
+Text Label 1950 1450 0    50   ~ 0
 M2
-Text Label 1750 1850 0    50   ~ 0
+Text Label 1950 1850 0    50   ~ 0
 M3
-Text Label 1750 2250 0    50   ~ 0
+Text Label 1950 2250 0    50   ~ 0
 M4
-Text Label 2950 1500 2    50   ~ 0
+Text Label 3650 1500 2    50   ~ 0
 M1
-Text Label 2950 1600 2    50   ~ 0
+Text Label 3650 1600 2    50   ~ 0
 M2
-Text Label 2950 1700 2    50   ~ 0
+Text Label 3650 1700 2    50   ~ 0
 M3
-Text Label 2950 1800 2    50   ~ 0
+Text Label 3650 1800 2    50   ~ 0
 M4
 $Comp
 L Device:R_Small R22
@@ -1229,19 +1229,19 @@ Text Label 7100 2150 0    50   ~ 0
 COM_TX
 Text Label 7100 2250 0    50   ~ 0
 COM_RX
-Text Label 9000 1550 2    50   ~ 0
+Text Label 8950 1550 2    50   ~ 0
 COM_TX
-Text Label 9000 1650 2    50   ~ 0
+Text Label 8950 1650 2    50   ~ 0
 COM_RX
 $Comp
 L Device:R_Small R19
 U 1 1 5B1582E5
-P 6600 1700
-F 0 "R19" H 6659 1746 50  0000 L CNN
-F 1 "100" H 6659 1655 50  0000 L CNN
-F 2 "passive:R_0402_1005Metric_Rounded" H 6600 1700 50  0001 C CNN
-F 3 "~" H 6600 1700 50  0001 C CNN
-	1    6600 1700
+P 6850 1700
+F 0 "R19" H 6909 1746 50  0000 L CNN
+F 1 "100" H 6909 1655 50  0000 L CNN
+F 2 "passive:R_0402_1005Metric_Rounded" H 6850 1700 50  0001 C CNN
+F 3 "~" H 6850 1700 50  0001 C CNN
+	1    6850 1700
 	0    -1   -1   0   
 $EndComp
 Text Label 8950 1250 2    50   ~ 0
@@ -1249,20 +1249,18 @@ F.port
 $Comp
 L Device:R_Small R25
 U 1 1 5B15AC9F
-P 8350 2250
-F 0 "R25" H 8409 2296 50  0000 L CNN
-F 1 "180" H 8409 2205 50  0000 L CNN
-F 2 "passive:R_0402_1005Metric_Rounded" H 8350 2250 50  0001 C CNN
-F 3 "~" H 8350 2250 50  0001 C CNN
-	1    8350 2250
+P 8200 2250
+F 0 "R25" H 8259 2296 50  0000 L CNN
+F 1 "180" H 8259 2205 50  0000 L CNN
+F 2 "passive:R_0402_1005Metric_Rounded" H 8200 2250 50  0001 C CNN
+F 3 "~" H 8200 2250 50  0001 C CNN
+	1    8200 2250
 	0    1    1    0   
 $EndComp
 Text Label 5100 3850 0    50   ~ 0
 VIN
-Text Label 8250 2250 2    50   ~ 0
+Text Label 8100 2250 2    50   ~ 0
 VIN
-Wire Wire Line
-	8950 2250 8750 2250
 $Comp
 L Transistor_BJT:BC807W Q2
 U 1 1 5B169675
@@ -1324,7 +1322,7 @@ BUZZER
 Text Label 7350 950  0    50   ~ 0
 BUZZER
 Text Label 1550 2650 0    50   ~ 0
-ESC_TLM
+ESC_TLM_P
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5B177D51
@@ -1391,8 +1389,6 @@ F 3 "~" H 6200 1700 50  0001 C CNN
 	1    6200 1700
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6500 1700 6400 1700
 $Comp
 L Device:LED D1
 U 1 1 5B194B5D
@@ -1707,4 +1703,36 @@ Text Notes 9050 7500 0    71   ~ 0
 By Emil Fresk <emil.fresk@gmail.com>
 Text Notes 9950 7350 0    71   ~ 0
 Open source hardware
+Wire Wire Line
+	1750 2250 1550 2250
+Wire Wire Line
+	1750 1850 1550 1850
+Wire Wire Line
+	1750 1450 1550 1450
+Wire Wire Line
+	1550 1050 1750 1050
+Text Label 1550 1050 0    50   ~ 0
+M1_P
+Text Label 1550 1450 0    50   ~ 0
+M2_P
+Text Label 1550 1850 0    50   ~ 0
+M3_P
+Text Label 1550 2250 0    50   ~ 0
+M4_P
+Text Label 6400 1150 0    50   ~ 0
+BUZZ_P
+Wire Wire Line
+	6400 1700 6750 1700
+Text Label 6400 1700 0    50   ~ 0
+F.port_P
+Text Label 2000 7350 0    50   ~ 0
+V_HEAT
+Wire Wire Line
+	8600 2250 8950 2250
+Text Label 8700 2250 0    50   ~ 0
+LED
+Wire Wire Line
+	3250 1900 3650 1900
+Text Label 3650 1900 2    50   ~ 0
+ESC_TLM
 $EndSCHEMATC
