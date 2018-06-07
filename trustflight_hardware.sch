@@ -1632,15 +1632,15 @@ F 3 "" H 5550 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 7400 7500 0    71   ~ 14
-Trustflight
+Trustflight v1
 Text Notes 10600 7650 0    71   ~ 0
-v1
+A
 Text Notes 8150 7650 0    71   ~ 0
 2018-06-03
 Text Notes 9050 7500 0    71   ~ 0
 By Emil Fresk <emil.fresk@gmail.com>
-Text Notes 9950 7350 0    71   ~ 0
-Open source hardware
+Text Notes 7600 6900 0    71   ~ 14
+Open hardware license: CERN–OHL
 Wire Wire Line
 	1750 2250 1550 2250
 Wire Wire Line
@@ -1725,4 +1725,15 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds31861.pdf" H 6800 950 50  0001 C
 	-1   0    0    1   
 $EndComp
 Connection ~ 6700 750 
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 5B1A32D9
+P 7300 6850
+F 0 "LOGO1" H 7300 7125 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 7300 6625 50  0001 C CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 7300 6850 50  0001 C CNN
+F 3 "~" H 7300 6850 50  0001 C CNN
+	1    7300 6850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
