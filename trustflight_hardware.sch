@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:trustflight_hardware-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -744,17 +743,6 @@ F 3 "" H 1400 5750 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Transistor_BJT:BC807W Q1
-U 1 1 5B10DEA8
-P 1850 7000
-F 0 "Q1" H 2041 6954 50  0000 L CNN
-F 1 "BC807W" H 2041 7045 50  0000 L CNN
-F 2 "sot:SOT-323_SC-70" H 2050 6925 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC807.pdf" H 1850 7000 50  0001 L CNN
-	1    1850 7000
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:R_Small R8
 U 1 1 5B10E2F2
 P 1950 7450
@@ -982,7 +970,7 @@ L Device:R_Small R1
 U 1 1 5B12454C
 P 1400 7000
 F 0 "R1" H 1459 7046 50  0000 L CNN
-F 1 "1k" H 1459 6955 50  0000 L CNN
+F 1 "180" H 1459 6955 50  0000 L CNN
 F 2 "passive:R_0402_1005Metric_Rounded" H 1400 7000 50  0001 C CNN
 F 3 "~" H 1400 7000 50  0001 C CNN
 	1    1400 7000
@@ -1235,17 +1223,6 @@ F 3 "~" H 8200 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_BJT:BC807W Q2
-U 1 1 5B169675
-P 6800 950
-F 0 "Q2" H 6991 904 50  0000 L CNN
-F 1 "BC807W" H 6991 995 50  0000 L CNN
-F 2 "sot:SOT-323_SC-70" H 7000 875 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC807.pdf" H 6800 950 50  0001 L CNN
-	1    6800 950 
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R_Small R20
 U 1 1 5B169682
 P 6900 750
@@ -1272,7 +1249,7 @@ L Device:R_Small R23
 U 1 1 5B169690
 P 7250 950
 F 0 "R23" H 7309 996 50  0000 L CNN
-F 1 "1k" H 7309 905 50  0000 L CNN
+F 1 "180" H 7309 905 50  0000 L CNN
 F 2 "passive:R_0402_1005Metric_Rounded" H 7250 950 50  0001 C CNN
 F 3 "~" H 7250 950 50  0001 C CNN
 	1    7250 950 
@@ -1698,10 +1675,8 @@ Text Label 3650 1900 2    50   ~ 0
 ESC_TLM
 Wire Wire Line
 	6700 750  6700 650 
-Connection ~ 6700 750 
 Wire Wire Line
 	1950 6700 1950 6800
-Connection ~ 1950 6800
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5B1ADA97
@@ -1726,4 +1701,28 @@ Text Label 6400 1600 0    50   ~ 0
 VSYS
 Text Label 8100 2250 2    50   ~ 0
 VSYS
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 5B193EFE
+P 1850 7000
+F 0 "Q1" H 2056 6954 50  0000 L CNN
+F 1 "DMG1013UW" H 2056 7045 50  0000 L CNN
+F 2 "sot:SOT-323_SC-70" H 2050 7100 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31861.pdf" H 1850 7000 50  0001 C CNN
+	1    1850 7000
+	1    0    0    1   
+$EndComp
+Connection ~ 1950 6800
+$Comp
+L Device:Q_PMOS_GSD Q2
+U 1 1 5B199AFB
+P 6800 950
+F 0 "Q2" H 7006 904 50  0000 L CNN
+F 1 "DMG1013UW" H 7006 995 50  0000 L CNN
+F 2 "sot:SOT-323_SC-70" H 7000 1050 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31861.pdf" H 6800 950 50  0001 C CNN
+	1    6800 950 
+	-1   0    0    1   
+$EndComp
+Connection ~ 6700 750 
 $EndSCHEMATC
