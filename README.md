@@ -8,6 +8,5 @@ The hardware is OSHW using the Cern-OHL license.
 
 ## Images
 
-![alt text](top.jpg "Top")
-![alt text](bottom.jpg "Bottom")
+![alt text](pcb.jpg "PCV V1 RevA")
 
