@@ -15,23 +15,12 @@ Comment4 ""
 $EndDescr
 $Comp
 L stm32f302x:stm32f302x U4
-U 1 1 5B0F1C1B
-P 3400 6450
-F 0 "U4" H 3400 6500 60  0000 L CNN
-F 1 "STM32F302CBT6" H 3400 5300 60  0000 L CNN
-F 2 "qfp:LQFP-48_7x7mm_Pitch0.5mm" H 1250 5950 50  0001 C CNN
-F 3 "" H 1250 5950 50  0001 C CNN
-	1    3400 6450
-	1    0    0    1   
-$EndComp
-$Comp
-L stm32f302x:stm32f302x U4
 U 2 1 5B0F1C89
 P 3850 1400
 F 0 "U4" H 3850 1450 60  0000 L CNN
 F 1 "STM32F302CBT6" H 3850 750 60  0000 L CNN
 F 2 "qfp:LQFP-48_7x7mm_Pitch0.5mm" H 1700 900 50  0001 C CNN
-F 3 "" H 1700 900 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32f302cb.pdf" H 1700 900 50  0001 C CNN
 	2    3850 1400
 	1    0    0    -1  
 $EndComp
@@ -42,7 +31,7 @@ P 9150 850
 F 0 "U4" H 9150 900 60  0000 L CNN
 F 1 "STM32F302CBT6" H 9150 -700 60  0000 L CNN
 F 2 "qfp:LQFP-48_7x7mm_Pitch0.5mm" H 7000 350 50  0001 C CNN
-F 3 "" H 7000 350 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32f302cb.pdf" H 7000 350 50  0001 C CNN
 	3    9150 850 
 	1    0    0    -1  
 $EndComp
@@ -53,7 +42,7 @@ P 9650 5200
 F 0 "U4" H 9650 5250 60  0000 L CNN
 F 1 "STM32F302CBT6" H 9650 4450 60  0000 L CNN
 F 2 "qfp:LQFP-48_7x7mm_Pitch0.5mm" H 7500 4700 50  0001 C CNN
-F 3 "" H 7500 4700 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32f302cb.pdf" H 7500 4700 50  0001 C CNN
 	4    9650 5200
 	1    0    0    -1  
 $EndComp
@@ -64,7 +53,7 @@ P 9800 3350
 F 0 "U4" H 9800 3400 60  0000 L CNN
 F 1 "STM32F302CBT6" H 9800 2300 60  0000 L CNN
 F 2 "qfp:LQFP-48_7x7mm_Pitch0.5mm" H 7650 2850 50  0001 C CNN
-F 3 "" H 7650 2850 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32f302cb.pdf" H 7650 2850 50  0001 C CNN
 	5    9800 3350
 	1    0    0    -1  
 $EndComp
@@ -1031,7 +1020,7 @@ F 3 "" H 6400 1800 50  0001 C CNN
 	1    6400 1800
 	-1   0    0    -1  
 $EndComp
-Text Label 6950 1700 0    50   ~ 0
+Text Label 6950 1600 0    50   ~ 0
 F.port
 $Comp
 L power:GND #PWR0131
@@ -1201,12 +1190,12 @@ COM_RX
 $Comp
 L Device:R_Small R19
 U 1 1 5B1582E5
-P 6850 1700
-F 0 "R19" H 6909 1746 50  0000 L CNN
-F 1 "100" H 6909 1655 50  0000 L CNN
-F 2 "passive:R_0402_1005Metric_Rounded" H 6850 1700 50  0001 C CNN
-F 3 "~" H 6850 1700 50  0001 C CNN
-	1    6850 1700
+P 6850 1600
+F 0 "R19" H 6909 1646 50  0000 L CNN
+F 1 "100" H 6909 1555 50  0000 L CNN
+F 2 "passive:R_0402_1005Metric_Rounded" H 6850 1600 50  0001 C CNN
+F 3 "~" H 6850 1600 50  0001 C CNN
+	1    6850 1600
 	0    -1   -1   0   
 $EndComp
 Text Label 8950 1250 2    50   ~ 0
@@ -1428,10 +1417,10 @@ Wire Notes Line
 	3900 4800 3900 2900
 Wire Notes Line
 	5100 4800 5100 7750
-Text Notes 550  6800 0    50   ~ 0
-Assumes open-drain pin
+Text Notes 550  6850 0    50   ~ 0
+Assumes 5V tolerant\nopen-drain pin
 Text Notes 7300 750  0    50   ~ 0
-Assumes open-drain pin
+Assumes 5V tolerant open-drain pin
 Text Label 9450 5600 2    50   ~ 0
 SWCLK
 Text Label 9450 5500 2    50   ~ 0
@@ -1634,9 +1623,9 @@ $EndComp
 Text Notes 7400 7500 0    71   ~ 14
 Trustflight v1
 Text Notes 10600 7650 0    71   ~ 0
-A
+B
 Text Notes 8150 7650 0    71   ~ 0
-2018-06-03
+2018-07-21
 Text Notes 9050 7500 0    71   ~ 0
 By Emil Fresk <emil.fresk@gmail.com>
 Text Notes 7600 6900 0    71   ~ 14
@@ -1660,8 +1649,8 @@ M4_P
 Text Label 6400 1150 0    50   ~ 0
 BUZZ_P
 Wire Wire Line
-	6400 1700 6750 1700
-Text Label 6400 1700 0    50   ~ 0
+	6400 1600 6750 1600
+Text Label 6400 1600 0    50   ~ 0
 F.port_P
 Text Label 2000 7350 0    50   ~ 0
 V_HEAT
@@ -1697,7 +1686,7 @@ Text Label 1950 6700 1    50   ~ 0
 VSYS
 Text Label 6700 650  1    50   ~ 0
 VSYS
-Text Label 6400 1600 0    50   ~ 0
+Text Label 6400 1700 0    50   ~ 0
 VSYS
 Text Label 8100 2250 2    50   ~ 0
 VSYS
@@ -1735,5 +1724,16 @@ F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 7300 6850 50  0001 C CNN
 F 3 "~" H 7300 6850 50  0001 C CNN
 	1    7300 6850
 	1    0    0    -1  
+$EndComp
+$Comp
+L stm32f302x:stm32f302x U4
+U 1 1 5B0F1C1B
+P 3400 6450
+F 0 "U4" H 3400 6500 60  0000 L CNN
+F 1 "STM32F302CBT6" H 3400 5300 60  0000 L CNN
+F 2 "qfp:LQFP-48_7x7mm_Pitch0.5mm" H 1250 5950 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32f302cb.pdf" H 1250 5950 50  0001 C CNN
+	1    3400 6450
+	1    0    0    1   
 $EndComp
 $EndSCHEMATC
