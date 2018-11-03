@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:trustflight_hardware-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -301,7 +302,7 @@ F 3 "" H 1000 3600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:MIC5205-3.3 U5
+L Regulator_Linear:MIC5205-3.3YM5 U5
 U 1 1 5B0F4504
 P 5650 3950
 F 0 "U5" H 5650 4292 50  0000 C CNN
@@ -1577,7 +1578,7 @@ Connection ~ 4400 4250
 Text Notes 4200 3550 0    50   ~ 0
 Current in is about 300 mA\nincluding the IMU heater
 $Comp
-L Mechanical:Mounting_Hole MK2
+L Mechanical:MountingHole MK2
 U 1 1 5B1A857A
 P 5550 7050
 F 0 "MK2" H 5650 7096 50  0000 L CNN
@@ -1588,7 +1589,7 @@ F 3 "" H 5550 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK3
+L Mechanical:MountingHole MK3
 U 1 1 5B1A89AE
 P 5550 7250
 F 0 "MK3" H 5650 7296 50  0000 L CNN
@@ -1599,7 +1600,7 @@ F 3 "" H 5550 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK4
+L Mechanical:MountingHole MK4
 U 1 1 5B1A8A50
 P 5550 7450
 F 0 "MK4" H 5650 7496 50  0000 L CNN
@@ -1610,7 +1611,7 @@ F 3 "" H 5550 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK1
+L Mechanical:MountingHole MK1
 U 1 1 5B1A8CB4
 P 5550 6850
 F 0 "MK1" H 5650 6896 50  0000 L CNN
